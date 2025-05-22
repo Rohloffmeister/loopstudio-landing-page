@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  font-family: "Alata";
+  color: white;
+  overflow: auto;
+}
+
+body {
+  background-image: url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header {
+  width: 80%;
+}
+body header > nav {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body header > nav > .nav__menu {
+  display: flex;
+  position: relative;
+}
+body header > nav > .nav__menu > p {
+  margin: 0 1vw;
+  position: relative;
+  cursor: pointer;
+}
+body header > nav > .nav__menu p:hover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  background-color: white;
+  width: 60%;
+  height: 2px;
+  left: 50%;
+  margin-top: 2px;
+  transform: translateX(-50%);
+}
+body header > nav > img {
+  width: 15%;
+  margin-right: 30%;
+}
+body header > .box-catch-phrase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+  max-width: 55%;
+  aspect-ratio: 4/1.8;
+  border: 4px white solid;
+  font-size: 5vw;
+  font-weight: 300;
+  letter-spacing: 5px;
+  padding-right: 5%;
+  margin-top: 10%;
+}
+body header > .box-catch-phrase p {
+  margin: 10px 0 10px 10px;
+}
+body > main {
+  margin-top: 100px;
+  padding-bottom: 10%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body > main > .main__content {
+  color: black;
+  width: 75%;
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > main > .main__content > .main__content__leader-container {
+  margin-top: 100px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+body > main > .main__content > .main__content__leader-container > img {
+  height: auto;
+  width: 50vw;
+  margin: 0;
+}
+body > main > .main__content > .main__content__leader-container > .main__content__leader-container__text {
+  background-color: white;
+  position: absolute;
+  padding: 1;
+  width: 50%;
+  padding: 5%;
+  bottom: 0;
+  right: 0;
+}
+body > main > .main__content > .main__content__leader-container > .main__content__leader-container__text > p {
+  width: 90%;
+  color: hsl(0, 0%, 61%);
+}
+body > main > .main__content > .main__content__leader-container > .main__content__leader-container__text > .main__content__leader-container__text__header {
+  color: black;
+  text-align: left;
+  font-weight: 300;
+  font-family: "Josefin Sans";
+  font-size: clamp(2vw, 5%, 6vw);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+body > main > .main__content > .main__content__creation-container {
+  width: 100%;
+  font-family: "Josefin Sans";
+  text-transform: uppercase;
+}
+body > main > .main__content > .main__content__creation-container > .main__content__creation-container__top-line {
+  width: 100%;
+  display: flex;
+  font-weight: 300;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body > main > .main__content > .main__content__creation-container > .main__content__creation-container__top-line > p {
+  font-size: 3rem;
+}
+body > main > .main__content > .main__content__creation-container > .main__content__creation-container__top-line > button {
+  font-family: "Josefin Sans";
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  background-color: white;
+  letter-spacing: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+body > main > .main__content > .main__content__creation-container > .main__content__creation-container__top-line > button:hover {
+  background-color: black;
+  color: white;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: center;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item {
+  position: relative;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item img {
+  width: 100%;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item > div {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  width: 100%;
+  position: absolute;
+  height: 50%;
+  bottom: 0px;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item > div > p {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(15%);
+  color: white;
+  font-weight: 200;
+  font-size: 2vw;
+  inline-size: 80%;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item:hover > img {
+  opacity: 0.3;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item:hover > div {
+  background: none;
+}
+body > main > .main__content > .main__content__creation-container > .main__content_creation-container__grid > .main__content_creation-container__grid__item:hover > div > p {
+  color: black;
+}
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+}
+body footer > .footer__top-line {
+  margin: 50px auto 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+body footer > .footer__top-line > .footer__top-line__socials > a {
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+body footer > .footer__top-line > .footer__top-line__socials > a > img {
+  width: 35px;
+  position: relative;
+}
+body footer > .footer__top-line > .footer__top-line__socials > a:hover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  background-color: white;
+  width: 60%;
+  height: 2px;
+  left: 50%;
+  margin-top: 2px;
+  transform: translateX(-50%);
+}
+body footer > .footer__bottom-line {
+  width: 80%;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body footer > .footer__bottom-line > .footer__bottom-line__links {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+body footer > .footer__bottom-line > .footer__bottom-line__links > p {
+  margin-right: 40px;
+  font-size: large;
+  color: hsl(0, 0%, 85%);
+  position: relative;
+  cursor: pointer;
+}
+body footer > .footer__bottom-line > .footer__bottom-line__links p:hover::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  background-color: white;
+  width: 60%;
+  height: 2px;
+  left: 50%;
+  margin-top: 2px;
+  transform: translateX(-50%);
+}
+body footer > .footer__bottom-line > p {
+  color: hsl(0, 0%, 53%);
+  font-size: large;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=style.css.map */
